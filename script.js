@@ -1,12 +1,22 @@
-const temperature = parseFloat(prompt("Enter a temperature"));
-const unit = prompt("Enter a unit(C for celsius,F for fahrenheit):");
+const per = parseInt(prompt("Enter Your Percentage"));
 
-if (unit =="C")
-{
-    const fahrenheit  = parseFloat((9/5 * `${temperature}`)+32);
-    console.log(`${temperature}°C is equal to ${fahrenheit}°F`);
-}
-else{
-    const celsius = parseFloat((`${temperature}` - 32)*5/9);
-    console.log(`${temperature}°F is equal to ${celsius}°C`);
-}
+if (per > 100 && per < 99) 
+     {
+        console.log("Grade A");
+     }
+     else if (per >= 80 && per <= 89)
+     {
+        console.log("Grade B");
+     }
+     else if  (per >= 70 && per <= 79)
+     {
+        console.log("Grade C");
+     }
+     else if   (per >= 60 && per <= 69)
+     {
+        console.log("Grade D");
+     }
+     else if   (per >= 0 && per <= 59)
+     {
+        console.log("Grade F");
+     }
